@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main {
+  background-color: #101010;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: #101010;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: aliceblue;
+    border-radius: 10px;
+  }
+}
