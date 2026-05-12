@@ -4,10 +4,10 @@ import styles from "./folder.module.scss";
 
 interface IFolderProps {
   name: string;
-  children: TStructure;
+  nestedItems: TStructure;
 }
 
-export const Folder = ({ name, children }: IFolderProps) => {
+export const Folder = ({ name, nestedItems }: IFolderProps) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.folder}>
@@ -16,7 +16,7 @@ export const Folder = ({ name, children }: IFolderProps) => {
       </div>
       <div className={styles.list_wrapper}>
         <hr className={styles.hr} />
-        <div className={styles.list}>{renderFileStructure(children)}</div>
+        <div className={styles.list}>{renderFileStructure(nestedItems)}</div>
       </div>
     </div>
   );

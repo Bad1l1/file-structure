@@ -15,7 +15,7 @@ export const FileStructureFactory = ({
     case "file":
       return <File name={itemName} />;
     case "folder":
-      return <Folder name={itemName} children={item.children} />;
+      return <Folder name={itemName} nestedItems={item.children} />;
     default:
       return null;
   }
