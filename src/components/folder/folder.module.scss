@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.folder {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: #252525;
+  color: aliceblue;
+  width: max-content;
+  font-size: 24px;
+}
+
+.hr {
+  width: 1px;
+  height: 100%;
+}
+
+.list_wrapper {
+  display: flex;
+  padding-left: 15px;
+  gap: 15px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  gap: 15px;
+}
