@@ -4,7 +4,7 @@ import type { TStructure } from "../models/models";
 export const renderFileStructure = (structure: TStructure) => {
   const structureItems = Object.entries(structure);
 
-  return structureItems.map(([name, item], index) => (
-    <FileStructureFactory key={index} itemName={name} item={item} />
+  return structureItems.map(([name, item]) => (
+    <FileStructureFactory key={name} itemName={name} item={item} />
   ));
 };
